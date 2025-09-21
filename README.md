@@ -35,7 +35,7 @@ Weather Now is a modern, interactive web app built with React that delivers real
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/gauravdwivedi111/weather-now.git
+   https://github.com/gauravdwivedi111/weather-now.git
    ```
 2. Install dependencies:
    ```bash

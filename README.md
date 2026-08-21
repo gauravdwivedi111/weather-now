@@ -1,58 +1,76 @@
-Here is a sample README.md for your GitHub "weather-now" repository, formatted according to your provided image and project details:
+# Weather Now — Glassmorphic React Weather App
 
-***
+Weather Now is a modern, responsive single-page web application built with React and Vite that provides real-time weather updates. It features a sleek glassmorphic UI design, dynamic weather animations, and comprehensive weather parameters.
 
-# Weather Now
+---
 
-## User Persona
+## Key Features
 
-- **Name:** Jamie
-- **Occupation:** Outdoor Enthusiast
-- **Need:** Jamie wants to check the current weather conditions quickly for any city.
+*   **Real-Time Data**: Fetches up-to-date weather data including temperature, humidity, wind speed, and atmospheric conditions from the OpenWeatherMap API.
+*   **Dynamic Visuals**: Animated backgrounds and dynamic weather icons that adjust automatically based on the current weather status (clear, rainy, snowy, cloudy).
+*   **Glassmorphic UI**: High-fidelity interface designed with modern frosted-glass CSS styling, fluid hover states, and responsive grids down to mobile screen sizes.
+*   **Friendly Alerts**: Smart, contextual tips (e.g. suggesting an umbrella for rain or sunscreen for high UV indexes) built directly into the dashboard.
 
-## Task
+---
 
-- Build an application for Jamie.
+## Tech Stack
 
-## API Used
+*   **Frontend Library**: React 18
+*   **Build Tool**: Vite (providing ultra-fast Hot Module Replacement)
+*   **Styling**: Custom CSS3 variables, flexbox, grid, and backdrop-filter modules
+*   **API Integration**: Axios & OpenWeatherMap REST API
 
-- **Open-Meteo API**
+---
 
-## About Weather Now
+## Project Structure
 
-Weather Now is a modern, interactive web app built with React that delivers real-time weather updates for cities worldwide. Designed to help outdoor enthusiasts like Jamie, it features dynamic icons, animated backgrounds, humidity & wind data, a swift search experience, and weather tips—all within a sleek, responsive glassmorphism interface.
+```text
+weather-now/
+├── public/                      # Static assets (favicons, svgs)
+├── src/
+│   ├── assets/                  # Weather icons and background SVGs
+│   ├── components/              # SearchBar, WeatherCard, ForecastCard
+│   ├── App.jsx                  # Primary layout and API state manager
+│   ├── index.css                # Global styles and tailwind directives
+│   └── main.jsx                 # React DOM bootstrapper
+├── package.json                 # NPM scripts & package dependencies
+├── vite.config.js               # Vite configurations
+└── README.md                    # Root Documentation (this file)
+```
 
-## Features
+---
 
-- Real-time city weather updates
-- Dynamic weather icons and backgrounds
-- Humidity and wind data display
-- Instant search for any city
-- Friendly usage tips
-- Built with React and Vite
+## Setup and Installation
 
-## Getting Started
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16+)
 
-1. Clone the repository:
-   ```bash
-   https://github.com/gauravdwivedi111/weather-now.git
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-4. Visit `http://localhost:3000` in your browser.
+### Running Locally
+1.  Navigate to the project directory:
+    ```bash
+    cd "Weather Now/weather-now"
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Configure environment variables:
+    *   Create a `.env` file in the root folder:
+        ```env
+        VITE_WEATHER_API_KEY=your_openweathermap_api_key
+        ```
+4.  Start development server:
+    ```bash
+    npm run dev
+    ```
+    *Web app available at:* `http://localhost:5173`
+
+---
+
+## Author
+*   **Gaurav Dwivedi** - [GitHub Profile](https://github.com/gauravdwivedi111)
+
+---
 
 ## License
-
-This project currently has no license.
-
-***
-
-This README introduces the app clearly and matches the user story, task, and API from your source image. You can copy and paste this into your `README.md` file in the repository.
-
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/103373355/94c4b7fd-29a3-483d-b5ec-928cf19af7f7/Screenshot-2025-09-21-114032.jpg?AWSAccessKeyId=ASIA2F3EMEYEVUHUDZC7&Signature=S3kczgb51YBLjrYcI8faURkGsOg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEIb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIF4ekSvp2nZthvmwORqBHjq5smBOmJAwSHo0lCqFm2ynAiALZsnfq4KL7A7LqT96mkaaNF1RiLc6rUyPucpVkkB47yr6BAj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAEaDDY5OTc1MzMwOTcwNSIMhLV8vS6WeBaTqZKYKs4EF1LjNx6ECJ0Js0Xb5Cuo222u6G66NdoM4XqhbJcTKlkSIxH%2FinccDm6tN7f1NOuscr%2BR5oRA2nQBaJg5rqNt7u19ACutB58Al9tN%2F7RD9GZTJvmVeYfpvBoCLncgJyA96SwHbCN2kiia22FoCaLdfamGm%2BS8ZGy3SvprNdNDM%2FPVKbee2JLV6TH%2BCFLtplR0QM56Wmt6L4GHzbzViFxMS5bRraHsLuJ6zzd%2F7OKpW4kxntkv8driF8%2F5Ja8wzFEOeymD0CNNC%2FKwKvBps8rZaiY82Ea%2BTRrRC9S7ipwiUBSazkv9764bJ0VzJODCQe%2BHf1lZIXAItWwJBCzjJ15NLe6gBWiJVBd95yH%2FDXKwQ6EFvM06mvWSTB8fPRrmq2s%2F3Qq8t6f8gbRpuoYMrjQV7yISaSXaFtN6nhr9m4Q8PeHBwjLdRXOhe24QD3yaK4se9c%2Bd8yzVItOzY%2FUSwp6b9YpCYKwqzE4grMo0kP%2BTeYpZcRk05%2B08GXWyai%2Fg792dTR0aufsVUPSa41V0ZA3xWDH71IfRQB0N1qPtNO9IDeVxmPAgh667SEddlRJ1qbGs8mgRBJxrwyUXwKw8jAIuJFuBIrm65on2Dr4Pbj1zKadFaCbYhSkDO%2F63GmLD59TGoyTjHlxX4GswXIEamUHuqVmIbN8r8rDyTBG%2FLMQKXqbNXAspTpgF3hebJLbRoXqUyCgb6Lmw5%2FYXHZgtv1xYj8Z6h8KKqI4lSylv6l7r766QW9ZD%2FLnnXCpzUydHyjkqGf2fkmqAom8zC2791KQwv6q%2BxgY6mwHHmU2yPmw6%2FGlca9l3nCdrm71qgFKJx5QCbKmFoOHEzpDXph5SnhWww8kCjfTq5VOb05RmHgj2Fi7aM8gWb5NLVu5leAmmS1c8EsrDnlLE7qWdCw20GIY%2BqBhYHiXjihDCoZbar36HAX%2FMFFGnoOHsVb3viwC8oUs7qPWWEvobOhodH9%2FdvUhxpPNYgV0g4lyy0%2FKgIKAkwMJbgA%3D%3D&Expires=1758435701)
+This project is licensed under the MIT License - see the LICENSE file for details.
